@@ -1,0 +1,127 @@
+.trending {
+  padding: 50px 0;
+}
+.trending-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.trending-products i.fire {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: rgb(243, 186, 14);
+  font-size: 16px;
+}
+.trending-products .product-card {
+  width: calc((100% / 5) - 10px);
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.trending .trending-products .product-card:hover {
+  box-shadow: 3px 3px 6px 2px #0000001c;
+}
+
+.trending .trending-products .product-card img {
+  display: flex;
+  width: 150px;
+  max-height: 200px;
+  transition: 0.5s;
+  margin: 0 auto 10px;
+}
+.trending .trending-products .product-card:hover img {
+  transform: scale(1.1);
+}
+.trending .trending-products .product-card p {
+  margin: 5px 0;
+  color: #777;
+}
+.trending .trending-products .product-card h3 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.trending .trending-products .product-card span {
+  display: block;
+  font-weight: bold;
+}
+.trending .trending-products .product-card span del {
+  font-weight: normal;
+  color: #777;
+}
+.trending .trending-products .product-card button,
+.trending .trending-products .product-card a {
+  display: block;
+  position: absolute;
+  right: -100%;
+  opacity: 0;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.trending .trending-products .product-card button.add {
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.trending .trending-products .product-card button.add:hover {
+  background-color: #e9594f;
+}
+.trending .trending-products .product-card a.details {
+  top: 110px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #040404;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px 1px #00000036;
+}
+.trending .trending-products .product-card a.details:hover {
+  color: rgb(81, 81, 81);
+}
+.trending .trending-products .product-card:hover button,
+.trending .trending-products .product-card:hover a {
+  right: 10px;
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .trending-products .product-card {
+    box-shadow: 3px 3px 6px 2px #0000001c;
+    margin-bottom: 20px;
+  }
+  .trending .trending-products .product-card button,
+  .trending .trending-products .product-card a {
+    right: 10px;
+    opacity: 1;
+  }
+}
+@media (max-width: 1199px) {
+  .trending-products .product-card {
+    width: calc((100% / 4) - 10px);
+  }
+}
+@media (max-width: 991px) {
+  .trending-products .product-card {
+    width: calc((100% / 2) - 10px);
+  }
+}
+@media (max-width: 767px) {
+  .trending-products .product-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,75 @@
+.footer {
+  border-top: 1px solid #777;
+  padding: 50px 0 20px;
+}
+.footer .newsletter {
+  text-align: center;
+}
+.footer .newsletter .input {
+  width: 350px;
+  padding: 6px 8px;
+  border: 1px solid #777;
+  outline: none;
+  background-color: rgb(246, 246, 246);
+}
+
+.footer .newsletter .submit {
+  padding: 6px 8px;
+  border: 1px solid #000;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+}
+.footer .newsletter .submit:hover {
+  background-color: #181818;
+}
+.footer .links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .links ul li a {
+  text-decoration: none;
+  color: #525252;
+}
+.footer .links ul li a:hover {
+  text-decoration: underline;
+  color: #f44336;
+}
+.footer .contact span {
+  display: block;
+}
+.footer .contact span:not(:last-child) {
+  margin-bottom: 15px;
+}
+.footer .rights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.footer .rights .left {
+  display: flex;
+  align-items: center;
+}
+.footer .rights .left p {
+  margin: 0;
+}
+.footer .rights .logo {
+  width: 30px;
+  margin-right: 10px;
+}
+.footer .rights .cc {
+  width: 135px;
+}
+@media (max-width: 767px) {
+  .footer .links,
+  .footer .contact {
+    text-align: center;
+  }
+  .footer .newsletter .input {
+    width: 250px;
+  }
+  .footer .rights .left p {
+    font-size: 11px;
+  }
+}

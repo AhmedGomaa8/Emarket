@@ -1,0 +1,133 @@
+.about-page {
+  padding: 110px 0 30px;
+}
+.about-page h1 {
+  text-align: center;
+  margin-bottom: 84px;
+  font-size: 46px;
+}
+.about-page .about {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-page .about .about-text {
+  width: 50%;
+  padding-right: 50px;
+}
+.about-page .about .about-text h4 {
+  margin-bottom: 30px;
+  color: #f44336;
+  font-size: 30px;
+}
+.about-page .about .about-text p {
+  max-width: 600px;
+  font-size: 18px;
+  color: #505050;
+}
+.about-page .about .img {
+  width: 50%;
+  position: relative;
+}
+.about-page .about .img img:hover {
+  transform: translate(-10px, 10px);
+}
+.about-page .about .img img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.about-page .about .img::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 20px;
+  background-color: #00000063;
+  top: -20px;
+  right: -32px;
+}
+.about-page .about .img::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 40%;
+  background-color: #00000063;
+  top: -34px;
+  right: -20px;
+}
+.about-page .story {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.about-page .story .img {
+  width: 50%;
+  position: relative;
+}
+
+.about-page .story .img::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 20px;
+  background-color: #00000063;
+  top: -20px;
+  left: -32px;
+}
+.about-page .story .img::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 40%;
+  background-color: #00000063;
+  top: -34px;
+  left: -20px;
+}
+.about-page .story .img img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.about-page .img img {
+  transition: 1s;
+}
+.about-page .story .img img:hover {
+  transform: translate(10px, 10px);
+}
+.about-page .story .story-text {
+  width: 50%;
+  padding-left: 50px;
+}
+.about-page .story .story-text h4 {
+  margin-bottom: 30px;
+  color: #f44336;
+  font-size: 30px;
+}
+.about-page .story .story-text p {
+  max-width: 600px;
+  font-size: 18px;
+  color: #505050;
+}
+@media (max-width: 991px) {
+  .about-page .about .about-text {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  .about-page .about .img {
+    width: 100%;
+  }
+  .about-page .story .story-text {
+    width: 100%;
+    order: 1;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  .about-page .story .img {
+    width: 100%;
+    order: 2;
+  }
+  .about-page .img::before,
+  .about-page .img::after {
+    display: none;
+  }
+}

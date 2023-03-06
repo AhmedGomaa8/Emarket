@@ -1,0 +1,52 @@
+.login-page {
+  height: calc(100vh - 61.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-page h4 {
+  margin-bottom: 20px;
+}
+.login-page .form {
+  width: 350px;
+  height: 400px;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.058);
+  padding: 20px 50px;
+}
+.login-page .form .name,
+.login-page .form .email {
+  margin-bottom: 10px;
+}
+.login-page .form label {
+  display: block;
+}
+.login-page .form input {
+  width: 100%;
+  display: block;
+  padding: 6px 8px;
+  outline: none;
+  border: 1px solid #d8d8d8;
+}
+.login-page .form input[type="submit"] {
+  border: none;
+  margin-top: 30px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #f44336;
+  transition: 0.3s;
+}
+.login-page .form input[type="submit"]:hover {
+  background-color: #db2316;
+}
+.login-page .form .create {
+  text-align: center;
+  margin-top: 20px;
+}
+.login-page .form .create a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+.login-page .form .create a:hover {
+  text-decoration: underline;
+}

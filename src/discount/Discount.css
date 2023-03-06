@@ -1,0 +1,53 @@
+.discount {
+  background-image: url(../imgs/bg7.jpg);
+
+  background-size: cover;
+  height: 450px;
+}
+
+.discount .text {
+  text-align: left;
+  padding-top: 68px;
+  margin-left: 30px;
+  max-width: 600px;
+}
+.discount .text h1 {
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #373737;
+}
+.discount .text h1 span {
+  font-size: 84px;
+  color: #ff2e1e;
+}
+.discount .text a {
+  width: fit-content;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 16px;
+  font-weight: 500;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+.discount .text a:hover {
+  background-color: #0c0c0c;
+}
+@media (max-width: 767px) {
+  .discount {
+    height: 400px;
+  }
+  .discount .text {
+    margin: 0 auto;
+    padding: 68px 10px 0;
+  }
+  .discount .text h1 {
+    font-size: 44px;
+    width: 330px;
+  }
+  .discount .text h1 span {
+    font-size: 64px;
+  }
+}

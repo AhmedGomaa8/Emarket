@@ -1,0 +1,51 @@
+.landing {
+  height: calc(100vh - 61.5px);
+  background-image: url(../imgs/landingbg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.landing .caption {
+  width: fit-content;
+  margin: auto;
+  padding-top: 200px;
+  text-align: center;
+}
+.landing .caption h1 {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Fredoka One";
+}
+.landing .caption p {
+  font-size: 50px;
+  color: #5a5a5a;
+  font-family: "Fredoka One";
+}
+.landing .caption a {
+  color: #000;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px 30px;
+  transition: 0.5s;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  font-family: "Fredoka One";
+}
+.landing .caption a:hover {
+  background-color: #000;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .landing .caption h1 {
+    font-size: 50px;
+  }
+  .landing .caption p {
+    font-size: 22px;
+  }
+  .landing .caption a {
+    font-size: 22px;
+    padding: 6px 20px;
+  }
+}

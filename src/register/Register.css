@@ -1,0 +1,114 @@
+.register-page {
+  height: calc(100vh - 61.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-page h4 {
+  margin-bottom: 20px;
+}
+.register-page .form {
+  width: 350px;
+  height: 550px;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.058);
+  padding: 20px 50px;
+}
+.register-page .form .name,
+.register-page .form .email {
+  margin-bottom: 10px;
+}
+.register-page .form label {
+  display: block;
+}
+.register-page .form input {
+  width: 100%;
+  display: block;
+  padding: 6px 8px;
+  outline: none;
+  border: 1px solid #d8d8d8;
+}
+.register-page .form input[type="submit"] {
+  border: none;
+  margin-top: 30px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #f44336;
+  transition: 0.5s;
+}
+.register-page .form input[type="submit"]:hover {
+  background-color: #db2316;
+}
+.register-page .form span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+}
+.register-page .form span::before,
+.register-page .form span::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 1px;
+  background-color: #777;
+  top: 50%;
+}
+.register-page .form span::before {
+  left: 0;
+}
+.register-page .form span::after {
+  right: 0;
+}
+.register-page .form .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.register-page .form .links a {
+  display: block;
+  text-align: center;
+  line-height: 38px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 0 5px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.register-page .form .links a:nth-child(1) {
+  color: #1877f2;
+  border: 1px solid #1877f2;
+}
+.register-page .form .links a:nth-child(1):hover {
+  color: #fff;
+  background-color: #1877f2;
+}
+.register-page .form .links a:nth-child(2) {
+  color: #dd4b39;
+  border: 1px solid #dd4b39;
+}
+.register-page .form .links a:nth-child(2):hover {
+  color: #fff;
+  background-color: #dd4b39;
+}
+.register-page .form .links a:nth-child(3) {
+  color: black;
+  border: 1px solid black;
+}
+.register-page .form .links a:nth-child(3):hover {
+  color: #fff;
+  background-color: #000;
+}
+.register-page .form .user {
+  text-align: center;
+  margin-top: 20px;
+}
+.register-page .form .user a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+.register-page .form .user a:hover {
+  text-decoration: underline;
+}
