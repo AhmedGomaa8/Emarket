@@ -20,7 +20,7 @@ function Navbar() {
   });
   let dispatch = useDispatch();
   let [active, setActive] = useState(false);
-  let cart = useSelector((state) => state.cart);
+  let cart = useSelector((state) => state.cart.cartArr);
 
   let totalPrice = cart.reduce((acc, el) => {
     return acc + el.price * el.quantity;

@@ -17,7 +17,7 @@ function ProductDetails() {
           <i className="star fa-solid fa-star"></i>
         </p>
         <span>
-          ${product.price} <del>${product.price + 50}</del>
+          ${product.price} <del>${(product.price + 50).toFixed(2)}</del>
         </span>
         <p className="description">{product.description}</p>
         <button onClick={() => dispatch(addToCart(product))}>
