@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import About from "./about/About";
 import "./App.css";
 import Footer from "./footer/Footer";
@@ -15,14 +15,20 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductsPage />} />
         <Route
-          path="/products/details/:productId"
-          element={<ProductDetails />}
-        />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+          path="products"
+          element={
+            <>
+              <Outlet />
+            </>
+          }
+        >
+          <Route path="" element={<ProductsPage />} />
+          <Route path=":productId" element={<ProductDetails />} />
+        </Route>
+        <Route path="about" element={<About />} />
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
       </Routes>
       <Footer />
     </div>

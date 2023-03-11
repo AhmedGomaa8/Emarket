@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../rtk/slices/cart-slice";
-import { productToDetails } from "../rtk/slices/productdetails-slice";
 import { fetchProducts } from "../rtk/slices/products-slice";
 import "./Trend.css";
 
@@ -38,11 +37,7 @@ function Trend() {
                 >
                   <i className="fa-solid fa-plus"></i>
                 </button>
-                <Link
-                  onClick={() => dispatch(productToDetails(product))}
-                  to={`/products/details/${product.id}`}
-                  className="details"
-                >
+                <Link to={`/products/${product.id}`} className="details">
                   <i className="fa-solid fa-eye"></i>
                 </Link>
               </div>

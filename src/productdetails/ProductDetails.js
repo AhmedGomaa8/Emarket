@@ -1,9 +1,17 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { addToCart } from "../rtk/slices/cart-slice";
 import "./ProductDetails.css";
 function ProductDetails() {
   let dispatch = useDispatch();
-  let product = useSelector((state) => state.details);
+  let param = useParams();
+  let [product, setProduct] = useState({});
+  useEffect(() => {
+    fetch(`https://fakestoreapi.com/products/${param.productId}`)
+      .then((res) => res.json())
+      .then((product) => setProduct(product));
+  }, []);
   return (
     <div key={product.id} className="product-details">
       <div className="product-img">
