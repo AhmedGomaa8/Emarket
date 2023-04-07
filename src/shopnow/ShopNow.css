@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+.shop-now {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.shop-now .box {
+  width: calc((100% / 2) - 5px);
+  position: relative;
+}
+@media (max-width: 767px) {
+  .shop-now .box {
+    width: 100%;
+  }
+  .shop-now .box:first-child {
+    margin-bottom: 20px;
+  }
+}
+.shop-now .box:hover img {
+  transform: scale(1.1);
+}
+.shop-now .box .img {
+  overflow: hidden;
+}
+.shop-now .box .img img {
+  width: 100%;
+  transition: 0.5s;
+}
+.shop-now .box .link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shop-now .box .link h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Satisfy", cursive;
+  font-size: 120px;
+}
+.shop-now .box .link a {
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  width: fit-content;
+  text-decoration: none;
+  padding: 16px 56px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.shop-now .box .link a:hover {
+  background-color: #fff;
+  color: #000;
+}
+@media (max-width: 1199px) {
+  .shop-now .box .link h3 {
+    font-size: 80px;
+  }
+  .shop-now .box .link a {
+    padding: 10px 36px;
+  }
+}
+@media (max-width: 991px) {
+  .shop-now .box .link h3 {
+    font-size: 60px;
+  }
+  .shop-now .box .link a {
+    padding: 8px 28px;
+  }
+}
